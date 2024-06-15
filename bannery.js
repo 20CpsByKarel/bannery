@@ -1,0 +1,12 @@
+document.addEventListener("DOMContentLoaded", function() {
+    var carouselItems = document.querySelectorAll(".carousel-item");
+    carouselItems.forEach(function(item, index) {
+        item.style.cursor = "pointer";
+        if (index === 0) {
+            item.setAttribute("href", "https://t.me/henry_morgan_europe");
+        }
+        else if (index === 1) {
+            item.setAttribute("href", "https://dsc.gg/henrymorgan");
+        }
+    });
+});
