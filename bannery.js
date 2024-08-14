@@ -3,10 +3,10 @@ document.addEventListener("DOMContentLoaded", function() {
     carouselItems.forEach(function(item, index) {
         item.style.cursor = "pointer";
                 if (index === 0) {
-            item.setAttribute("href", "https://www.henrymorgan.cz/en/search?phrase=thc-po");
+            item.setAttribute("href", "https://t.me/henry_morgan_europe");
         }
         else if (index === 0) {
-            item.setAttribute("href", "https://t.me/henry_morgan_europe");
+            item.setAttribute("href", "https://dsc.gg/henrymorgan");
         }
         else if (index === 1) {
             item.setAttribute("href", "https://dsc.gg/henrymorgan");
