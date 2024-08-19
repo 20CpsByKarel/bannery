@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     carouselItems.forEach(function(item, index) {
         item.style.cursor = "pointer";
                 if (index === 0) {
-            item.setAttribute("href", "https://t.me/henry_morgan_europe");
+            item.setAttribute("href", "https://henrymorgan.cz/en/disposable-pods-pods);
         }
         else if (index === 0) {
             item.setAttribute("href", "https://dsc.gg/henrymorgan");
