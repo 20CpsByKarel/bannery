@@ -5,10 +5,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 if (index === 0) {
             item.setAttribute("href", "https://www.henrymorgan.cz/en/action");
         }
-        else if (index === 0) {
+        else if (index === 1) {
             item.setAttribute("href", "https://dsc.gg/henrymorgan");
         }
-        else if (index === 1) {
+        else if (index === 2) {
             item.setAttribute("href", "https://dsc.gg/henrymorgan");
         }
     });
