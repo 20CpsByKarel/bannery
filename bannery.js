@@ -1,46 +1,27 @@
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        // Select all carousel items within the #banner1
-        var carouselItems = document.querySelectorAll("#banner1 .carousel-item");
-        var language = upgates.language.toLowerCase();  // Convert to lowercase for consistency
+document.addEventListener("DOMContentLoaded", function() {
+    var carouselItems = document.querySelectorAll(".carousel-item");
+    var language = upgates.language.toLowerCase();  // Převod na malá písmena pro zajištění konzistence
 
-        // Allowed languages
-        var supportedLanguages = ["hu", "ro", "pl", "en", "de", "it", "sl", "sk", "fi"];
-        
-        // Set default language to "en" if unsupported
-        if (!supportedLanguages.includes(language)) {
-            language = "en";
+    // Povolené jazyky
+    var supportedLanguages = ["hu", "ro", "pl", "en", "de", "it", "sl", "sk", "fi"];
+    
+    // Nastavení výchozího jazyka na "en" pokud je jazyk nepodporovaný
+    if (!supportedLanguages.includes(language)) {
+        language = "en";
+    }
+
+    carouselItems.forEach(function(item, index) {
+        item.style.cursor = "pointer";
+
+        if (index === 0) {
+            // Dynamické nastavení URL na základě jazyka
+            item.setAttribute("href", "https://www.henrymorgan.cz/" + language + "/action");
         }
-
-        console.log('Number of carousel items:', carouselItems.length); // Debugging line
-
-        // Loop through carousel items to set the href attributes
-        carouselItems.forEach(function(item, index) {
-            item.style.cursor = "pointer"; // Set cursor to pointer
-
-            // Set href based on the number of items
-            if (carouselItems.length === 2) {
-                // For 2 items
-                if (index === 0) {
-                    item.setAttribute("href", "https://www.henrymorgan.cz/" + language + "/action");
-                } else if (index === 1) {
-                    item.setAttribute("href", "https://t.me/+iDeOp5VXKVQ4NDhk");
-                }
-            } else if (carouselItems.length === 3) {
-                // For 3 items
-                if (index === 0) {
-                    item.setAttribute("href", "https://www.henrymorgan.cz/" + language + "/action");
-                } else if (index === 1) {
-                    item.setAttribute("href", "https://t.me/+iDeOp5VXKVQ4NDhk");
-                } else if (index === 2) {
-                    item.setAttribute("href", "https://dsc.gg/henrymorgan");
-                }
-            }
-        });
-
-        // Debugging: Log the set URLs
-        carouselItems.forEach(function(item, index) {
-            console.log('Item ' + index + ' href:', item.getAttribute("href"));
-        });
+        else if (index === 1) {
+            item.setAttribute("href", "https://t.me/henry_morgan_europe");
+        }
+        else if (index === 2) {
+            item.setAttribute("href", "https://dsc.gg/henrymorgan");
+        }
     });
-</script>
+});
