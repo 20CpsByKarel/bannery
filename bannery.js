@@ -1,21 +1,23 @@
     document.addEventListener("DOMContentLoaded", function() {
         var carouselItems = document.querySelectorAll(".carousel-item");
-        var language = upgates.language.toLowerCase();  // Převod na malá písmena pro zajištění konzistence
+        var language = upgates.language.toLowerCase();  // Convert to lowercase for consistency
 
-        // Povolené jazyky
+        // Allowed languages
         var supportedLanguages = ["hu", "ro", "pl", "en", "de", "it", "sl", "sk", "fi"];
         
-        // Nastavení výchozího jazyka na "en" pokud je jazyk nepodporovaný
+        // Set default language to "en" if unsupported
         if (!supportedLanguages.includes(language)) {
             language = "en";
         }
 
-        carouselItems.forEach(function(item, index) {
-            item.style.cursor = "pointer"; // Nastavení kurzoru na pointer
+        console.log('Number of carousel items:', carouselItems.length); // Debugging line
 
-            // Kontrola počtu indexů
+        carouselItems.forEach(function(item, index) {
+            item.style.cursor = "pointer"; // Set cursor to pointer
+
+            // Conditional URL setting based on the number of items
             if (carouselItems.length === 3) {
-                // Dynamické nastavení URL na základě jazyka pro 3 indexy
+                // Dynamic URL setting for 3 items
                 if (index === 0) {
                     item.setAttribute("href", "https://www.henrymorgan.cz/" + language + "/action");
                 } else if (index === 1) {
@@ -24,12 +26,17 @@
                     item.setAttribute("href", "https://dsc.gg/henrymorgan");
                 }
             } else if (carouselItems.length === 2) {
-                // Dynamické nastavení URL na základě jazyka pro 2 indexy
+                // Dynamic URL setting for 2 items
                 if (index === 0) {
                     item.setAttribute("href", "https://www.henrymorgan.cz/" + language + "/action");
                 } else if (index === 1) {
                     item.setAttribute("href", "https://t.me/+iDeOp5VXKVQ4NDhk");
                 }
             }
+        });
+        
+        // Debugging: Log the set URLs
+        carouselItems.forEach(function(item, index) {
+            console.log('Item ' + index + ' href:', item.getAttribute("href"));
         });
     });
