@@ -15,10 +15,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (index === 0) {
             // Dynamické nastavení URL na základě jazyka
-            item.setAttribute("href","https://www.henrymorgan.cz/en/action");
+            item.setAttribute("href","https://t.me/+iDeOp5VXKVQ4NDhk");
         }
         else if (index === 1) {
-            item.setAttribute("href", "https://t.me/+iDeOp5VXKVQ4NDhk");
+            item.setAttribute("href", "https://dsc.gg/henrymorgan");
         }
         else if (index === 2) {
             item.setAttribute("href", "https://dsc.gg/henrymorgan");
