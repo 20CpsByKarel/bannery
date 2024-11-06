@@ -19,8 +19,8 @@ document.addEventListener("DOMContentLoaded", function() {
             item.setAttribute("href", "https://www.henrymorgan.cz/" + language + "/action");
         }
         else if (index === 1) {
-            item.setAttribute("href", "https://t.me/+iDeOp5VXKVQ4NDhk");
-            //item.setAttribute("href", "https://dsc.gg/henrymorgan");
+            //item.setAttribute("href", "https://t.me/+iDeOp5VXKVQ4NDhk");
+            item.setAttribute("href", "https://dsc.gg/henrymorgan");
         }
         else if (index === 2) {
             item.setAttribute("href", "https://dsc.gg/henrymorgan");
