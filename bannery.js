@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         else if (index === 1) {
             //item.setAttribute("href", "https://t.me/+iDeOp5VXKVQ4NDhk");
-            item.setAttribute("href", "https://dsc.gg/henrymorgan");
+            item.setAttribute("href", "https://www.reddit.com/r/HenryMorgan/s/7QaPccFXJk");
         }
         else if (index === 2) {
             item.setAttribute("href", "https://dsc.gg/henrymorgan");
