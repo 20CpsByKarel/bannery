@@ -14,9 +14,10 @@ document.addEventListener("DOMContentLoaded", function() {
         item.style.cursor = "pointer";
 
         if (index === 0) {
+            item.setAttribute("href", "https://dsc.gg/henrymorgan");
             // Dynamické nastavení URL na základě jazyka
             //item.setAttribute("href", "https://t.me/henry_morgan_europe");
-            item.setAttribute("href", "https://www.henrymorgan.cz/" + language + "/action");
+            //item.setAttribute("href", "https://www.henrymorgan.cz/" + language + "/action");
         }
         else if (index === 1) {
             //item.setAttribute("href", "https://t.me/+iDeOp5VXKVQ4NDhk");
