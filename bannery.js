@@ -12,18 +12,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
     carouselItems.forEach(function(item, index) {
         item.style.cursor = "pointer";
-if(index === 0) {item.setAttribute("href", "https;//henrymorgan.cz/action");}
-        else if (index === 1) {
+//if(index === 0) {item.setAttribute("href", "https;//henrymorgan.cz/action");}
+        if (index === 0) {
             //item.setAttribute("href", "https://dsc.gg/henrymorgan");
             // Dynamické nastavení URL na základě jazyka
             //item.setAttribute("href", "https://t.me/henry_morgan_europe");
             item.setAttribute("href", "https://morganlanding.eu/christmas/");
         }
-        else if (index === 2) {
+        else if (index === 1) {
             item.setAttribute("href", "https://dsc.gg/henrymorgan");
             //item.setAttribute("href", "https://www.reddit.com/r/HenryMorgan/s/7QaPccFXJk");
         }
-        else if (index === 3) {
+        else if (index === 2) {
             item.setAttribute("href", "https://www.reddit.com/r/HenryMorgan/s/7QaPccFXJk");
             //item.setAttribute("href", "https://dsc.gg/henrymorgan");
         }
