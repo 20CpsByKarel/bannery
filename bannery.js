@@ -17,10 +17,11 @@ document.addEventListener("DOMContentLoaded", function() {
             //item.setAttribute("href", "https://dsc.gg/henrymorgan");
             // Dynamické nastavení URL na základě jazyka
             //item.setAttribute("href", "https://t.me/henry_morgan_europe");
-            item.setAttribute("href", "https://morganlanding.eu/christmas/");
+            item.setAttribute("href", "https://dsc.gg/henrymorgan");
         }
         else if (index === 1) {
-            item.setAttribute("href", "https://dsc.gg/henrymorgan");
+            item.setAttribute("href", "https://www.reddit.com/r/HenryMorgan/s/7QaPccFXJk");
+            //item.setAttribute("href", "https://dsc.gg/henrymorgan");
             //item.setAttribute("href", "https://www.reddit.com/r/HenryMorgan/s/7QaPccFXJk");
         }
         else if (index === 2) {
